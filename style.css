@@ -30,8 +30,27 @@ body {
     display: flex;
 }
 .winner-block{
-    margin-top: 150px;
+    margin-top: 180px;
 }
-.winner-block button{
-   
+.winner-block .btn1{
+   border: 2px solid black;
+   color: #dadada;
+   background-color: brown;
+   border-radius: 20px;
+   height: 30px;
+   width: 100px;
+   margin-right: 120px;
+}
+.winner-block .btn2{
+   border: 2px solid black;
+   color: #dadada;
+   background-color: brown;
+   border-radius: 20px;
+   height: 30px;
+   width: 100px;
+}
+.winner-block p{
+    font-family: cursive;
+    font-size: large;
+    margin-top: 2px;
 }
