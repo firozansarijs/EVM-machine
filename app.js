@@ -6,6 +6,7 @@ const btn3 = document.querySelector(".block-3 button");
 const party3 = document.querySelector(".block-3 span");
 const btn4 = document.querySelector(".block-4 button");
 const party4 = document.querySelector(".block-4 span");
+const win = document.querySelector(".winner-block span");
 
 let vote1 = 0;
 let vote2 = 0;
