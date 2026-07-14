@@ -27,7 +27,7 @@ btn3.addEventListener("click", () => {
     party3.textContent = vote3;
     console.log("vote3");
 });
-btn1.addEventListener("click", () => {
+btn4.addEventListener("click", () => {
     vote4 = vote4 + 1;
     party4.textContent = vote4;
     console.log("vote4");
