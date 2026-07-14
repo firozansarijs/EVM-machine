@@ -33,3 +33,7 @@ btn4.addEventListener("click", () => {
     party4.textContent = vote4;
     console.log("vote4");
 });
+
+if (vote1 > vote2 && vote1 > vote3 && vote1 > vote4) {
+
+}
