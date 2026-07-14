@@ -19,7 +19,7 @@ btn1.addEventListener("click", () => {
 });
 btn2.addEventListener("click", () => {
     vote2 = vote2 + 1;
-    party1.textContent = vote2;
+    party2.textContent = vote2;
     console.log("vote2");
 });
 btn3.addEventListener("click", () => {
