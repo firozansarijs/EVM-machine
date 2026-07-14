@@ -34,6 +34,6 @@ btn4.addEventListener("click", () => {
     console.log("vote4");
 });
 
-if (vote1 > vote2 && vote1 > vote3 && vote1 > vote4) {
-
+    if (vote1 > vote2 && vote1 > vote3 && vote1 > vote4) {
+    win.textContent = "Maggi Lovers Party";
 }
