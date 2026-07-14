@@ -18,9 +18,9 @@ btn1.addEventListener("click", () => {
     console.log("vote1");
 });
 btn2.addEventListener("click", () => {
-    vote2 = vote1 + 1;
-    party1.textContent = vote1;
-    console.log("vote1");
+    vote2 = vote2 + 1;
+    party1.textContent = vote2;
+    console.log("vote2");
 });
 btn1.addEventListener("click", () => {
     vote1 = vote1 + 1;
