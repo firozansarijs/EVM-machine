@@ -1,116 +1,188 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-   margin: 0;
-   padding: 0;
-   background-color: skyblue;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+body{
+    background:linear-gradient(to right,#87CEEB,#9fd8f6);
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    min-height:100vh;
+    padding:50px 0;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .evm-card{
-    height: 600px;
-    width: 470px;
-    border: 5px solid black;
-    background-color: #A77E58;
-    border-radius: 10px;
-    margin-top: 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width:500px;
+    background:#A77E58;
+    border:4px solid #000;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
 }
+
+.evm-card h1{
+    text-align:center;
+    font-size:48px;
+    margin-bottom:15px;
+    color:#111;
+}
+
+/* ---------------- Officer Panel ---------------- */
+
+.officer-space{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.lock{
+    font-size:20px;
+    font-weight:bold;
+}
+
+.open,
+.close{
+    width:190px;
+    height:45px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.open{
+    background:#28a745;
+}
+
+.open:hover{
+    background:#1f8637;
+    transform:translateY(-2px);
+    box-shadow:0 8px 18px rgba(0,0,0,.3);
+}
+
+.close{
+    background:#dc3545;
+}
+
+.close:hover{
+    background:#b92a38;
+    transform:translateY(-2px);
+    box-shadow:0 8px 18px rgba(0,0,0,.3);
+}
+
+/* ---------------- Candidate Area ---------------- */
+
 .Candidate{
-    padding-left: 10px;
-    min-height: 0;
-    justify-content: space-between;
-    display: flex;
-    flex-direction: column;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
 }
-.Candidate button{
-    margin-top: 5px;
-    height: 30px;
-    width: 70px;
-    border: 3px solid black;
-    border-radius: 10px;
-    background-color: #dadada;
-    cursor:pointer
-}
-.block-1{
-    margin-top: 20px;
-    background-color: #F3F9D2;
-    padding: 10px;
-    height: 100px;
-    width: 370px;
-    border: 3px solid black;
-    border-radius: 5px;
-}
-.block-1 button{
-    margin-left: 250px;
-    margin-bottom: 2px;
-}
-.block-2 button{
-    margin-left: 250px;
-    margin-bottom: 2px;
-}
-.block-3 button{
-    margin-left: 250px;
-    margin-bottom: 2px;
-}
-.block-4 button{
-    margin-left: 250px;
-    margin-bottom: 2px;
-}
-.block-2{
-    margin-top: 5px;
-    background-color: #F3F9D2;
-    padding: 10px;
-    height: 100px;
-    width: 370px;
-    border: 3px solid black;
-    border-radius: 5px;
-}
-.block-3{
-    margin-top: 5px;
-    background-color: #F3F9D2;
-    padding: 10px;
-    height: 100px;
-    width: 370px;
-    border: 3px solid black;
-    border-radius: 5px;
-}
+
+/* ---------------- Candidate Cards ---------------- */
+
+.block-1,
+.block-2,
+.block-3,
 .block-4{
-    margin-top: 5px;
-    background-color: #F3F9D2;
-    padding: 10px;
-    height: 100px;
-    width: 370px;
-    border: 3px solid black;
-    border-radius: 5px;
+    background:#F7F8CF;
+    border:3px solid #222;
+    border-radius:12px;
+    padding:15px;
+    transition:.3s;
+    box-shadow:0 5px 12px rgba(0,0,0,.15);
 }
-.winner-block .btn1{
-   border: 2px solid black;
-   color: #dadada;
-   background-color: brown;
-   border-radius: 20px;
-   height: 30px;
-   width: 100px;
-   margin-right: 120px;
+
+.block-1:hover,
+.block-2:hover,
+.block-3:hover,
+.block-4:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 20px rgba(0,0,0,.25);
 }
+
+.block-1 h3,
+.block-2 h3,
+.block-3 h3,
+.block-4 h3{
+    font-size:31px;
+    margin-bottom:12px;
+}
+
+.block-1 p,
+.block-2 p,
+.block-3 p,
+.block-4 p{
+    font-size:22px;
+    font-weight:bold;
+}
+
+/* ---------------- Vote Button ---------------- */
+
+.Candidate button{
+    display:block;
+    margin-left:auto;
+    margin-top:15px;
+
+    width:100px;
+    height:42px;
+
+    border:2px solid black;
+    border-radius:12px;
+
+    background:#efefef;
+
+    font-size:17px;
+    font-weight:bold;
+
+    cursor:pointer;
+    transition:.3s;
+}
+
+.Candidate button:hover{
+    background:#FFD54F;
+    transform:scale(1.08);
+}
+
+/* ---------------- Winner Section ---------------- */
+
+.winner-block{
+    margin-top:25px;
+}
+
+.winner-block .btn1,
 .winner-block .btn2{
-   border: 2px solid black;
-   color: #dadada;
-   background-color: brown;
-   border-radius: 20px;
-   height: 30px;
-   width: 100px;
+    width:120px;
+    height:42px;
+    border:none;
+    border-radius:25px;
+    background:brown;
+    color:white;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
 }
+
+.winner-block .btn1{
+    margin-right:140px;
+}
+
+.winner-block .btn1:hover,
+.winner-block .btn2:hover{
+    background:#861818;
+    transform:translateY(-2px);
+}
+
 .winner-block p{
-    font-family: cursive;
-    font-size: large;
-    margin-top: 2px;
+    margin-top:15px;
+    font-size:24px;
+    font-weight:bold;
 }
