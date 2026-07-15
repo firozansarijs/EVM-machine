@@ -7,6 +7,7 @@ const party3 = document.querySelector(".block-3 span");
 const btn4 = document.querySelector(".block-4 button");
 const party4 = document.querySelector(".block-4 span");
 const win = document.querySelector(".winner-block span");
+const winbtn = document.querySelector(".winner-block .btn1")
 
 let vote1 = 0;
 let vote2 = 0;
@@ -34,6 +35,23 @@ btn4.addEventListener("click", () => {
     console.log("vote4");
 });
 
-    if (vote1 > vote2 && vote1 > vote3 && vote1 > vote4) {
-    win.textContent = "Maggi Lovers Party";
-}
+winbtn.addEventListener("click" , () =>{
+    if(vote1 > vote2 && vote1 > vote3 && vote1 > vote4){
+        let print1 = "maggie lover party winner";
+        win.textContent = print1;
+        console.log(print1);
+    }else if(vote2 > vote1 && vote2 > vote3 && vote2 > vote4){
+       let print2 = "Pizza Party winner";
+       win.textContent = print2;
+       console.log(print2);
+    }else if(vote3 > vote1 && vote3 > vote2 && vote3 > vote4){
+       let print3 = "Javascript janata party winner";
+       win.textContent = print3;
+       console.log(print3); 
+    }else{
+       let print4 = "python janata party winner";
+       win.textContent = print4;
+       console.log(print4);  
+    }
+})
+  
