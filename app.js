@@ -37,7 +37,9 @@ btn4.addEventListener("click", () => {
 });
 
 winbtn.addEventListener("click" , () =>{
-    if(vote1 > vote2 && vote1 > vote3 && vote1 > vote4){
+    if (vote1 === 0 && vote2 === 0 && vote3 === 0 && vote4 === 0) {
+       win.textContent = "Please vote first.";
+    }else if(vote1 > vote2 && vote1 > vote3 && vote1 > vote4){
         let print1 = "maggie lover party winner";
         win.textContent = print1;
         console.log(print1);
@@ -53,6 +55,10 @@ winbtn.addEventListener("click" , () =>{
        let print4 = "python janata party winner";
        win.textContent = print4;
        console.log(print4);  
+    }else{
+        let draw = "Draw! Please vote again.";
+        win.textContent = draw;
+        console.log(draw);
     }
 
     rebtn.addEventListener("click" , () => {
@@ -68,8 +74,18 @@ winbtn.addEventListener("click" , () =>{
      vote4 = 0;
      party4.textContent = vote4;
      console.log(vote4); 
-     winbtn.span.textContent = ""
-     console.log(winbtn)
+     print1 = "Please vote to see the winner."
+     win.textContent = print1
+     console.log(print1)
+     print2 = "Please vote to see the winner."
+     win.textContent = print2
+     console.log(print2)
+     print3 = "Please vote to see the winner."
+     win.textContent = print3
+     console.log(print3)
+     print4 = "Please vote to see the winner."
+     win.textContent = print4
+     console.log(print4)
 }) 
 })
   
