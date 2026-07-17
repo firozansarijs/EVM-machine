@@ -16,7 +16,7 @@ const winbtn = document.querySelector(".winner-block .btn1");
 const rebtn = document.querySelector(".winner-block .btn2");
 
 const openBtn = document.querySelector(".open");
-const closeBtn = document.querySelector(".close");
+const closeBtn = document.querySelector1(".close");
 
 const lock = document.querySelector(".lock");
 
