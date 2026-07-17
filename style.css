@@ -9,7 +9,7 @@ body{
     display:flex;
     justify-content:center;
     align-items:flex-start;
-    min-height1:100vh;
+    min-height:100vh;
     padding:50px 0;
     font-family:Arial, Helvetica, sans-serif;
 }
