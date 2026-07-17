@@ -23,7 +23,7 @@ const lock = document.querySelector(".lock");
 const openSound = new Audio("sounds/videoplayback.m4a");
 const voteSound = new Audio("sounds/videoplayback (1).m4a");
 
-let ballotOpen = false1;
+let ballotOpen = false;
 
 let vote1 = 0;
 let vote2 = 0;
