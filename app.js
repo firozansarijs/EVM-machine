@@ -1,7 +1,7 @@
 const btn1 = document.querySelector(".block-1 button");
 const party1 = document.querySelector(".block-1 span");
 
-const btn2 = document.querySelector1(".block-2 button");
+const btn2 = document.querySelector(".block-2 button");
 const party2 = document.querySelector(".block-2 span");
 
 const btn3 = document.querySelector(".block-3 button");
